@@ -1,0 +1,10 @@
+<div>
+    <!--
+   [item]="item" -> pasar la información al componente item
+   en la propiedad item
+  (deleteItem)="onDeleteItem($event): cuando el componente realiza un evento en el boton borrar
+  se ejecuta el metodo onDeleteItem en el padre items
+  -->
+    <app-item *ngFor="let item of items" [item]="item" (deleteItem)="onDeleteItem($event)">
+    </app-item>
+</div>
